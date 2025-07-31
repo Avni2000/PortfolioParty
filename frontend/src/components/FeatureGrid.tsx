@@ -4,15 +4,15 @@ const FeatureGrid = () => {
   const features = [
     {
       title: "Popular Stocks Right Now",
-      description: "See what stocks are trending and popular among users. Get insights into the latest market movements and popular picks."
+      description: "See what stocks are trending and popular among users. Get insights into the latest market movements and your community's popular picks."
     },
     {
       title: "Investor Chatrooms", 
-      description: "Join topic-based chatrooms to discuss strategies, share insights, and connect with other investors. Engage in real-time conversations about market trends and investment opportunities."
+      description: "Join topic-based chatrooms to discuss strategies, share insights, and connect with other investors around you. Engage in real-time conversations about market trends and investment opportunities."
     },
     {
       title: "Portfolio Snapshots",
-      description: "Peak into anonymized, top-performing portfolios to see how successful investors are allocating their assets. Learn from the strategies of the best in the market."
+      description: "Peak into anonymized, top-performing portfolios to see how successful investors in your community are allocating their assets. Learn from the strategies of the best in the market."
     },
     {
       title: "Investment Insights Feed",

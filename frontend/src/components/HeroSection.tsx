@@ -26,13 +26,7 @@ const HeroSection = () => {
       {/* Hero Gradient Effect */}
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none"></div>
 
-      {/* Animated Dots */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-primary-glow rounded-full animate-pulse delay-300"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-primary rounded-full animate-pulse delay-700"></div>
-        <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-primary-glow rounded-full animate-pulse delay-1000"></div>
-      </div>
+      
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
