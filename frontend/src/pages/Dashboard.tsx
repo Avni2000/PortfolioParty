@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '../components/Header';
+import { ChatWidget } from "../components/ChatWidget";
 
 interface BackendPortfolioData {
   name: string;
@@ -476,6 +477,8 @@ const Dashboard = () => {
           </div>
         </section>
       )}
+      {/*Chatbot Section*/}
+      <ChatWidget />
     </div>
   );
 };
