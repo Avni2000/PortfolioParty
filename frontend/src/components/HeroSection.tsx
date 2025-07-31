@@ -30,16 +30,12 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="text-6xl md:text-8xl font-bold text-hero-text mb-6 leading-tight">
-          Trade All<br />
-          in One Place
+        <h1 className="text-6xl md:text-7xl font-bold text-hero-text mb-6 leading-tight">
+          Investing, made social.
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Manage your entire portfolio – stocks, ETFs, and crypto – at low costs.
-        </p>
 
-        <Button variant="hero" size="hero" className="shadow-button hover:shadow-glow" onClick ={() => navigate('/signup')}>
+        <Button variant="hero" size="hero" className="mt-8 shadow-button hover:shadow-glow" onClick ={() => navigate('/signup')}>
           Get started
         </Button>
       </div>

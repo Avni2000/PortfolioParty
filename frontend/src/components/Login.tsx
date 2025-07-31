@@ -98,7 +98,7 @@ const LogIn = () => {
       
       {/* Header */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-        <Link to="/" className="text-green-400 text-xl font-medium">Portfolio Party</Link>
+        <Link to="/" className=" text-[#3FAC1F] text-xl font-medium" >Portfolio Party</Link>
       </div>
 
       <div className="flex items-center justify-between w-full max-w-6xl z-10">
@@ -163,7 +163,7 @@ const LogIn = () => {
             {/* Login button */}
             <button
               type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+              className="w-full bg-[#3FAC1F] hover:bg-green-600 disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-lg transition-colors"
               disabled={isLoading}
             >
               {isLoading ? 'Signing in...' : 'Login'}
@@ -172,7 +172,7 @@ const LogIn = () => {
           
           <p className="text-center text-sm text-gray-300 mt-6">
             Don't have an account?{' '}
-            <Link to="/signup" className="text-green-400 hover:underline">
+            <Link to="/signup" className="text-[#3FAC1F] hover:underline">
               Sign up
             </Link>
           </p>

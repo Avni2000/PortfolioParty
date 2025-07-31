@@ -9,7 +9,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-green-400">
+          <Link to="/" className="text-2xl font-bold text-[#3FAC1F]">
             Portfolio Party
           </Link>
         </div>

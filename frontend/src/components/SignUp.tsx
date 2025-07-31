@@ -89,7 +89,7 @@ const SignUp = () => {
       
       {/* Header */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-        <Link to="/" className="text-green-400 text-xl font-medium">Portfolio Party</Link>
+        <Link to="/" className="text-[#3FAC1F] text-xl font-medium">Portfolio Party</Link>
       </div>
 
       <div className="flex items-center justify-between w-full max-w-6xl z-10">
@@ -178,7 +178,7 @@ const SignUp = () => {
             {/* Sign up button */}
             <button
               type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+              className="w-full bg-[#3FAC1F] hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
               
             >
               Sign up
@@ -186,7 +186,7 @@ const SignUp = () => {
           </form>
           <p className="text-center text-sm text-gray-300 mt-6">
             Already have an account?{' '}
-            <Link to="/login" className="text-green-400 hover:underline">
+            <Link to="/login" className="text-[#3FAC1F] hover:underline">
               Sign in
             </Link>
           </p>
