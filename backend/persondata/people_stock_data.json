@@ -273,5 +273,55 @@
         "totalInvested": 7350.00
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "You",
+    "city": "Portfolio Party",
+    "joinDate": "2024-01-01",
+    "totalPortfolioValue": 47850.75,
+    "totalGainLoss": 8350.75,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2024-01-15",
+        "dateSold": null,
+        "sharesBought": 20,
+        "purchasePrice": 481.50,
+        "totalInvested": 9630.00
+      },
+      {
+        "ticker": "AAPL",
+        "dateBought": "2024-02-01",
+        "dateSold": null,
+        "sharesBought": 50,
+        "purchasePrice": 185.20,
+        "totalInvested": 9260.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2024-03-10",
+        "dateSold": null,
+        "sharesBought": 25,
+        "purchasePrice": 420.80,
+        "totalInvested": 10520.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2024-04-15",
+        "dateSold": null,
+        "sharesBought": 15,
+        "purchasePrice": 162.40,
+        "totalInvested": 2436.00
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2024-05-20",
+        "dateSold": null,
+        "sharesBought": 30,
+        "purchasePrice": 238.50,
+        "totalInvested": 7155.00
+      }
+    ]
   }
 ] 
