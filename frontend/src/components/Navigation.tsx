@@ -38,8 +38,26 @@ const Navigation = () => {
 
         {/* Right Side Actions */}
         <div className="flex items-center space-x-4">
-          <div className="hidden sm:flex items-center text-nav-text text-sm">
-            🇺🇸 US
+          <div className="hidden sm:flex items-center text-sm">
+            <label htmlFor="language" className="sr-only">Select language</label>
+            <select
+              id="language"
+              name="language"
+              className="bg-black text-white border border-border rounded px-2 py-1 focus:outline-none focus:ring focus:border-primary"
+              defaultValue="us"
+              onChange={(e) => {
+                const lang = e.target.value;
+                // TODO: Implement language switch logic here
+                console.log("Selected language:", lang);
+              }}
+            >
+              <option value="us">🇺🇸 US</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="es">🇪🇸 ES</option>
+              <option value="de">🇩🇪 DE</option>
+              <option value="cn">🇨🇳 CN</option>
+              <option value="jp">🇯🇵 JP</option>
+            </select>
           </div>
           <Button variant="nav" size="sm" onClick ={() => navigate('/login')}>
             Log in
