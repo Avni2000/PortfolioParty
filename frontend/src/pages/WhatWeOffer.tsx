@@ -9,7 +9,7 @@ const WhatWeOffer = () => {
         <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto px-4">
           Unlock your investing potential with our all-in-one social investing platform.
         </p>
-      </header>
+        </header>
 
       <section className="max-w-5xl mx-auto space-y-16 px-4 pb-12">
 
