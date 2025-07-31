@@ -46,21 +46,11 @@ const Support = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border border-border rounded-lg p-4 bg-muted">
-              <img
-                src="https://via.placeholder.com/400x200?text=Getting+Started"
-                alt="Getting Started Tutorial"
-                className="w-full rounded mb-2"
-              />
               <h3 className="font-semibold text-lg">Getting Started</h3>
               <p className="text-sm text-muted-foreground">Create an account, explore the dashboard, and set up your portfolio.</p>
             </div>
 
             <div className="border border-border rounded-lg p-4 bg-muted">
-              <img
-                src="https://via.placeholder.com/400x200?text=Trading+Tools"
-                alt="Trading Tools Tutorial"
-                className="w-full rounded mb-2"
-              />
               <h3 className="font-semibold text-lg">Mastering Trading Tools</h3>
               <p className="text-sm text-muted-foreground">Learn to analyze charts, use indicators, and manage your trades.</p>
             </div>
