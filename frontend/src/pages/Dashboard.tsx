@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { User, LogOut, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 const Dashboard = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const { signOut } = useAuth();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
-    window.location.href = '/';
+    signOut(); // clear user
+    navigate('/login'); // redirect
   };
 
   return (

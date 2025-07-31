@@ -98,7 +98,7 @@ const LogIn = () => {
       
       {/* Header */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
-        <h1 className="text-green-400 text-xl font-medium">Portfolio Party</h1>
+        <Link to="/" className="text-green-400 text-xl font-medium">Portfolio Party</Link>
       </div>
 
       <div className="flex items-center justify-between w-full max-w-6xl z-10">
