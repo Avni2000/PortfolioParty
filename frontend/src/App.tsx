@@ -9,6 +9,11 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login"; 
 import Dashboard from "./pages/Dashboard";
 import WhatWeOffer from "./pages/WhatWeOffer";
+import Strategies from "./pages/Strategies";
+import Gold from "./pages/Gold";
+import Legend from "./pages/Legend";
+import Learn from "./pages/Learn";
+import Support from "./pages/Support";
 
 const queryClient = new QueryClient();
 
@@ -25,9 +30,12 @@ const App = () => (
           <Route path='/signup' element={<SignUp />} />
           <Route path = '/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/what-we-offer' element={<WhatWeOffer />} />
-    
-
+          <Route path="/what-we-offer" element={<WhatWeOffer />} />
+          <Route path="/strategies" element={<Strategies />} />
+          <Route path="/gold" element={<Gold />} />
+          <Route path="/legend" element={<Legend />} />
+          <Route path="/learn" element={<Learn />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

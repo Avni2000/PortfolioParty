@@ -16,11 +16,21 @@ const Navigation = () => {
           <Button variant="nav" onClick={() => navigate('/what-we-offer')}>
             What We Offer
           </Button>
-          <Button variant="nav">Strategies</Button>
-          <Button variant="nav">Gold</Button>
-          <Button variant="nav">Legend</Button>
-          <Button variant="nav">Learn</Button>
-          <Button variant="nav">Support</Button>
+          <Button variant="nav" onClick={() => navigate('/strategies')}>
+            Strategies
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/gold')}>
+            Gold
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/legend')}>
+            Legend
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/learn')}>
+            Learn
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/support')}>
+            Support
+          </Button>
         </div>
 
         {/* Right Side Actions */}
