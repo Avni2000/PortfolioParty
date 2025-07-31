@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 
-const Gold = () => {
+const Community = () => {
  return (
     <Layout>
       <header className="pt-12 mb-12">
-        <h1 className="text-4xl font-extrabold text-center text-hero-text">Gold</h1>
+        <h1 className="text-4xl font-extrabold text-center text-hero-text">Community</h1>
         <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto px-4">
           Subtitle here
         </p>
@@ -26,4 +26,4 @@ const Gold = () => {
   );
 };
 
-export default Gold;
+export default Community;

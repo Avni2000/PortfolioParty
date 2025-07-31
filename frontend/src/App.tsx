@@ -10,10 +10,10 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login"; 
 import Dashboard from "./pages/Dashboard";
 import WhatWeOffer from "./pages/WhatWeOffer";
-import Strategies from "./pages/Strategies";
-import Gold from "./pages/Gold";
+import Purpose from "./pages/Purpose";
+import Community from "./pages/Community";
 import Legend from "./pages/Legend";
-import Learn from "./pages/Learn";
+import Resources from "./pages/Resources";
 import Support from "./pages/Support";
 
 const queryClient = new QueryClient();
@@ -46,10 +46,10 @@ const App = () => (
             <Route path = '/login' element={<Login />} />
             <Route path='/dashboard' element={<ProtectedDashboard />} />
             <Route path="/what-we-offer" element={<WhatWeOffer />} />
-            <Route path="/strategies" element={<Strategies />} />
-            <Route path="/gold" element={<Gold />} />
+            <Route path="/purpose" element={<Purpose />} />
+            <Route path="/community" element={<Community />} />
             <Route path="/legend" element={<Legend />} />
-            <Route path="/learn" element={<Learn />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/support" element={<Support />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
