@@ -16,17 +16,14 @@ const Navigation = () => {
 
         {/* Navigation Links, add items below to add to webpage functionality */}
         <div className="hidden md:flex items-center space-x-8">
+          <Button variant="nav" onClick={() => navigate('/purpose')}>
+            Our Purpose
+          </Button>
           <Button variant="nav" onClick={() => navigate('/what-we-offer')}>
             What We Offer
           </Button>
-          <Button variant="nav" onClick={() => navigate('/purpose')}>
-            Purpose
-          </Button>
           <Button variant="nav" onClick={() => navigate('/community')}>
             Community
-          </Button>
-          <Button variant="nav" onClick={() => navigate('/legend')}>
-            Legend
           </Button>
           <Button variant="nav" onClick={() => navigate('/resources')}>
             Resources

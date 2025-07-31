@@ -5,9 +5,9 @@ import { Twitter, Discord, Linkedin } from "lucide-react";
 const Community = () => {
   return (
     <Layout>
-      <header className="pt-12 mb-12 text-center text-white">
-        <h1 className="text-4xl font-extrabold">Community</h1>
-        <p className="mt-4 text-lg max-w-3xl mx-auto px-4">
+      <header className="pt-12 mb-12">
+        <h1 className="text-4xl font-extrabold text-center text-hero-text">Community</h1>
+        <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto px-4">
           Connect, learn, and grow with fellow users. Join discussions, share tips, and build your network.
         </p>
       </header>
