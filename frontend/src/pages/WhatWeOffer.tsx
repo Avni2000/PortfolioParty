@@ -1,10 +1,14 @@
-// pages/WhatWeOffer.tsx
+import Layout from "@/components/Layout";
+
 const WhatWeOffer = () => {
   return (
-    <div className="pt-20 px-6">
-      <h1 className="text-3xl font-bold">What We Offer</h1>
-      <p>This is the What We Offer page.</p>
-    </div>
+    <Layout>
+      <h1 className="text-3xl font-bold text-center mb-6">What We Offer</h1>
+      {/* Add your content below */}
+      <p className="text-center text-muted-foreground">
+        We offer tools, resources, and strategies for successful trading.
+      </p>
+    </Layout>
   );
 };
 

@@ -1,10 +1,14 @@
-// pages/Strategies.tsx
+import Layout from "@/components/Layout";
+
 const Strategies = () => {
   return (
-    <div className="pt-20 px-6">
-      <h1 className="text-3xl font-bold">Strategies</h1>
-      <p>This is the Strategies page.</p>
-    </div>
+    <Layout>
+      <h1 className="text-3xl font-bold text-center mb-6">Strategies</h1>
+      {/* Add your content below */}
+      <p className="text-center text-muted-foreground">
+        *insert text here*
+      </p>
+    </Layout>
   );
 };
 

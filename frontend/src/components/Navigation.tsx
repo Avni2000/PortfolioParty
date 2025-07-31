@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -8,7 +9,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-hero-text">Portfolio Party</h1>
+          <Link to="/" className="text-2xl font-bold text-green-400">
+            Portfolio Party
+          </Link>
         </div>
 
         {/* Navigation Links, add items below to add to webpage functionality */}

@@ -1,11 +1,15 @@
-// pages/Legends.tsx
-const Legends = () => {
+import Layout from "@/components/Layout";
+
+const Legend = () => {
   return (
-    <div className="pt-20 px-6">
-      <h1 className="text-3xl font-bold">Legends</h1>
-      <p>This is the Legends page.</p>
-    </div>
+    <Layout>
+      <h1 className="text-3xl font-bold text-center mb-6">Legend</h1>
+      {/* Add your content below */}
+      <p className="text-center text-muted-foreground">
+        *insert text here*
+      </p>
+    </Layout>
   );
 };
 
-export default Legends;
+export default Legend;
