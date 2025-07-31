@@ -13,10 +13,24 @@ const Navigation = () => {
 
         {/* Navigation Links, add items below to add to webpage functionality */}
         <div className="hidden md:flex items-center space-x-8">
-          <Button variant="nav">Why We Do What We Do</Button>
-          {/* <Button variant="nav"></Button> */}
-          <Button variant="nav">Rankings</Button>
-          <Button variant="nav">Your Community</Button>
+          <Button variant="nav" onClick={() => navigate('/what-we-offer')}>
+            What We Offer
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/strategies')}>
+            Strategies
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/gold')}>
+            Gold
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/legend')}>
+            Legend
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/learn')}>
+            Learn
+          </Button>
+          <Button variant="nav" onClick={() => navigate('/support')}>
+            Support
+          </Button>
         </div>
 
         {/* Right Side Actions */}

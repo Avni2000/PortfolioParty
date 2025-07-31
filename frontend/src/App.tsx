@@ -2,60 +2,60 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login"; 
 import Dashboard from "./pages/Dashboard";
+import WhatWeOffer from "./pages/WhatWeOffer";
+import Strategies from "./pages/Strategies";
+import Gold from "./pages/Gold";
+import Legend from "./pages/Legend";
+import Learn from "./pages/Learn";
+import Support from "./pages/Support";
 
 const queryClient = new QueryClient();
 
 const ProtectedDashboard = () => {
-  const { isSignedIn, signIn } = useAuth();
+  const { isSignedIn, currentUser } = useAuth();
   
-  console.log('🛡️ ProtectedDashboard render - isSignedIn:', isSignedIn);
+  console.log('🛡️ ProtectedDashboard render - isSignedIn:', isSignedIn, 'user:', currentUser?.email);
   
-  // Automatically sign in when accessing dashboard
+  // Redirect to login if not signed in
   if (!isSignedIn) {
-    signIn();
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Signing you in...</h2>
-          <p className="mb-4">Welcome to Portfolio Party!</p>
-        </div>
-      </div>
-    );
+    console.log('❌ User not signed in, redirecting to login');
+    return <Navigate to="/login" replace />;
   }
   
   return <Dashboard />;
 };
 
-const AppRoutes = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/dashboard' element={<ProtectedDashboard />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <AuthProvider>
-        <AppRoutes />
-      </AuthProvider>
+      <BrowserRouter>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path='/signup' element={<SignUp />} />
+            <Route path = '/login' element={<Login />} />
+            <Route path='/dashboard' element={<ProtectedDashboard />} />
+            <Route path="/what-we-offer" element={<WhatWeOffer />} />
+            <Route path="/strategies" element={<Strategies />} />
+            <Route path="/gold" element={<Gold />} />
+            <Route path="/legend" element={<Legend />} />
+            <Route path="/learn" element={<Learn />} />
+            <Route path="/support" element={<Support />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </AuthProvider>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

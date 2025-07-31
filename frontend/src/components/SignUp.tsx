@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 const SignUp = () => {
   const navigate = useNavigate();
+  const { signUp, isUserRegistered } = useAuth();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -15,7 +17,8 @@ const SignUp = () => {
     firstName: '',
     lastName: '',
     email: '',
-    password: ''
+    password: '',
+    general: ''
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,6 +26,15 @@ const SignUp = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
+    
+    // Clear errors when user starts typing
+    if (errors[e.target.name as keyof typeof errors]) {
+      setErrors({
+        ...errors,
+        [e.target.name]: '',
+        general: ''
+      });
+    }
   };
 
   const validateForm = () => {
@@ -30,8 +42,15 @@ const SignUp = () => {
       firstName: formData.firstName ? '' : 'First name is required',
       lastName: formData.lastName ? '' : 'Last name is required',
       email: formData.email ? '' : 'Email is required',
-      password: formData.password ? '' : 'Password is required'
+      password: formData.password.length >= 6 ? '' : 'Password must be at least 6 characters',
+      general: ''
     };
+    
+    // Check if user already exists
+    if (formData.email && isUserRegistered(formData.email)) {
+      newErrors.email = 'User with this email already exists';
+      newErrors.general = 'This email is already registered. Please try logging in instead.';
+    }
     
     setErrors(newErrors);
     
@@ -48,7 +67,18 @@ const SignUp = () => {
     
     console.log('Sign up data:', formData);
     
-    navigate('/Dashboard');
+    // Use AuthContext signUp function
+    const signUpSuccess = signUp(formData);
+    
+    if (signUpSuccess) {
+      console.log('✅ Sign up successful, navigating to dashboard');
+      navigate('/dashboard');
+    } else {
+      setErrors({
+        ...errors,
+        general: 'Sign up failed. Please try again.'
+      });
+    }
   };
 
   return (
@@ -73,50 +103,77 @@ const SignUp = () => {
 
         {/* Right side - Form */}
         <div className="w-full max-w-md">
+          {/* General error message */}
+          {errors.general && (
+            <div className="mb-4 p-3 bg-red-500 bg-opacity-20 border border-red-500 rounded-lg">
+              <p className="text-red-400 text-sm">{errors.general}</p>
+            </div>
+          )}
+          
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* First and Last name row */}
             <div className="flex gap-3">
-              <input
-                type="text"
-                name="firstName"
-                placeholder="First name"
-                value={formData.firstName}
-                onChange={handleChange}
-                className="flex-1 px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
-                required
-              />
-              <input
-                type="text"
-                name="lastName"
-                placeholder="Last name"
-                value={formData.lastName}
-                onChange={handleChange}
-                className="flex-1 px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
-                required
-              />
+              <div className="flex-1">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First name"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 ${
+                    errors.firstName ? 'focus:ring-red-400' : 'focus:ring-green-400'
+                  }`}
+                  required
+                />
+                {errors.firstName && <p className="text-red-400 text-sm mt-1">{errors.firstName}</p>}
+              </div>
+              <div className="flex-1">
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last name"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 ${
+                    errors.lastName ? 'focus:ring-red-400' : 'focus:ring-green-400'
+                  }`}
+                  required
+                />
+                {errors.lastName && <p className="text-red-400 text-sm mt-1">{errors.lastName}</p>}
+              </div>
             </div>
 
             {/* Email */}
-            <input
-              type="email"
-              name="email"
-              placeholder="email@domain.com"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
-              required
-            />
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="email@domain.com"
+                value={formData.email}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 ${
+                  errors.email ? 'focus:ring-red-400' : 'focus:ring-green-400'
+                }`}
+                required
+              />
+              {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
+            </div>
 
             {/* Password */}
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              value={formData.password}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
-              required
-            />
+            <div>
+              <input
+                type="password"
+                name="password"
+                placeholder="password (min 6 characters)"
+                value={formData.password}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-white border-0 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 ${
+                  errors.password ? 'focus:ring-red-400' : 'focus:ring-green-400'
+                }`}
+                required
+              />
+              {errors.password && <p className="text-red-400 text-sm mt-1">{errors.password}</p>}
+            </div>
 
             {/* Sign up button */}
             <button
