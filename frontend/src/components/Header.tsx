@@ -17,7 +17,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-green-500 to-green-600 px-6 py-4 shadow-lg">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center space-x-4">
-          <Link to="/dashboard" className="text-xl font-bold text-black hover:underline">
+          <Link to="/dashboard" className="text-xl font-bold text-black">
             Dashboard
           </Link>
         </div>
