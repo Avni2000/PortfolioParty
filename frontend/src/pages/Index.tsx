@@ -8,7 +8,11 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <FeatureGrid />
+      <footer className="bg-background border-t border-border py-6 text-center text-sm text-muted-foreground z-10 relative">
+       © 2025 Portfolio Party. All rights reserved.
+      </footer>
     </div>
+
   );
 };
 

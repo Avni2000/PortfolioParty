@@ -25,10 +25,10 @@ const FeatureGrid = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-hero-text mb-6">
-            Title Section
+            Explore Our Features
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Subtitle description text goes here
+            Discover the powerful tools and resources we offer to help you succeed in trading and investing.
           </p>
         </div>
 
