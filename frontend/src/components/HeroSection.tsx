@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import tradingVideo from "@/video/vecteezy_forex-trading-investor-financial-analyst-stock-market-chart_26389055.mp4";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const HeroSection = () => {
           loop
           playsInline
         > { /* video link can go here! */}
-          <source src="TODO" type="video/mp4" />
+          <source src={tradingVideo} type="video/mp4" />
           {/* Fallback gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-background via-muted to-background"></div>
         </video>
@@ -49,6 +50,7 @@ const HeroSection = () => {
         </Button>
       </div>
     </section>
+    
   );
 };
 
