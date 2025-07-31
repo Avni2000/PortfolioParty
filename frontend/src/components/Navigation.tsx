@@ -25,9 +25,6 @@ const Navigation = () => {
           <Button variant="nav" onClick={() => navigate('/community')}>
             Community
           </Button>
-          <Button variant="nav" onClick={() => navigate('/resources')}>
-            Resources
-          </Button>
           <Button variant="nav" onClick={() => navigate('/support')}>
             Support
           </Button>
