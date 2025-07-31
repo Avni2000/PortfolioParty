@@ -1,54 +1,18 @@
 import React, { useState } from 'react';
 import { User, LogOut, ChevronDown } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+
 
 const Dashboard = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const { signOut } = useAuth();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    signOut(); // clear user
-    navigate('/login'); // redirect
-  };
+  
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-green-500 to-green-600 px-6 py-4 shadow-lg">
-        <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <div className="flex items-center space-x-4">
-          <Link to="/Dashboard" className = "text-xl font-bold text-black hover:underline"> Dashboard</Link>
-          
-        </div>
-         
-          {/* Profile Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 rounded-full p-2 transition-colors"
-            >
-              <User className="w-6 h-6 text-white" />
-              <ChevronDown className="w-4 h-4 text-white" />
-            </button>
-           
-            {isDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
-                <button
-                  onClick={handleLogout}
-                  className="flex items-center space-x-2 w-full px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                >
-                  <LogOut className="w-4 h-4" />
-                  <span>Log Out</span>
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
+      {/* Header */}
+      <Header />
 
-      {/* Hero Section */}
+      {/* Main Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight">
