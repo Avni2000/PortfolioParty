@@ -1,10 +1,14 @@
-// pages/Gold.tsx
+import Layout from "@/components/Layout";
+
 const Gold = () => {
   return (
-    <div className="pt-20 px-6">
-      <h1 className="text-3xl font-bold">Gold</h1>
-      <p>This is the Gold page.</p>
-    </div>
+    <Layout>
+      <h1 className="text-3xl font-bold text-center mb-6">Gold</h1>
+      {/* Add your content below */}
+      <p className="text-center text-muted-foreground">
+        *insert text here*
+      </p>
+    </Layout>
   );
 };
 

@@ -1,10 +1,14 @@
-// pages/Support.tsx
+import Layout from "@/components/Layout";
+
 const Support = () => {
   return (
-    <div className="pt-20 px-6">
-      <h1 className="text-3xl font-bold">Support</h1>
-      <p>This is the Support page.</p>
-    </div>
+    <Layout>
+      <h1 className="text-3xl font-bold text-center mb-6">Support</h1>
+      {/* Add your content below */}
+      <p className="text-center text-muted-foreground">
+        *insert text here*
+      </p>
+    </Layout>
   );
 };
 
