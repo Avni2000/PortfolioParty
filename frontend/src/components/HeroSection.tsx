@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background Placeholder */}
@@ -42,7 +44,7 @@ const HeroSection = () => {
           Manage your entire portfolio – stocks, ETFs, and crypto – at low costs.
         </p>
 
-        <Button variant="hero" size="hero" className="shadow-button hover:shadow-glow">
+        <Button variant="hero" size="hero" className="shadow-button hover:shadow-glow" onClick ={() => navigate('/signup')}>
           Get started
         </Button>
       </div>

@@ -16,8 +16,7 @@ Enter in a city (in the US), lookup the portfolios of people within that city, c
 
 ### Authorization Page
 
-*[Content to be added as features are developed]*
-
+Log in + Sign up feature
 
 ### Leaderboard Page
 
@@ -116,6 +115,5 @@ frontend/
 ## Contributing
 
 Please ensure all changes are tested locally before making changes straight to main. Update the README as you go along creating new features/pages
-
 
 Can't wait to start working with you all!

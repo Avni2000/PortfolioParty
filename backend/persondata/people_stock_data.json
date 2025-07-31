@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Chen",
+    "city": "San Francisco",
+    "joinDate": "2023-01-15",
+    "totalPortfolioValue": 85420.50,
+    "totalGainLoss": 12420.50,
+    "transactions": [
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-02-01",
+        "dateSold": null,
+        "sharesBought": 50,
+        "purchasePrice": 150.25,
+        "totalInvested": 7512.50
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-03-15",
+        "dateSold": "2023-08-20",
+        "sharesBought": 25,
+        "purchasePrice": 180.00,
+        "sellPrice": 220.50,
+        "totalInvested": 4500.00,
+        "totalReturned": 5512.50,
+        "profit": 1012.50
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-05-10",
+        "dateSold": null,
+        "sharesBought": 30,
+        "purchasePrice": 105.20,
+        "totalInvested": 3156.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-07-01",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 335.75,
+        "totalInvested": 13430.00
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "city": "New York",
+    "joinDate": "2023-02-20",
+    "totalPortfolioValue": 127830.75,
+    "totalGainLoss": 27830.75,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-01-10",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 210.50,
+        "totalInvested": 12630.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-04-05",
+        "dateSold": "2023-09-15",
+        "sharesBought": 100,
+        "purchasePrice": 85.25,
+        "sellPrice": 102.80,
+        "totalInvested": 8525.00,
+        "totalReturned": 10280.00,
+        "profit": 1755.00
+      },
+      {
+        "ticker": "META",
+        "dateBought": "2023-06-12",
+        "dateSold": null,
+        "sharesBought": 45,
+        "purchasePrice": 280.90,
+        "totalInvested": 12640.50
+      },
+      {
+        "ticker": "AMZN",
+        "dateBought": "2023-08-01",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 135.20,
+        "totalInvested": 10816.00
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Michael Rodriguez",
+    "city": "Austin",
+    "joinDate": "2023-03-08",
+    "totalPortfolioValue": 64250.25,
+    "totalGainLoss": -5749.75,
+    "transactions": [
+      {
+        "ticker": "NFLX",
+        "dateBought": "2023-01-25",
+        "dateSold": null,
+        "sharesBought": 35,
+        "purchasePrice": 385.40,
+        "totalInvested": 13489.00
+      },
+      {
+        "ticker": "DIS",
+        "dateBought": "2023-03-20",
+        "dateSold": "2023-10-05",
+        "sharesBought": 75,
+        "purchasePrice": 110.25,
+        "sellPrice": 95.80,
+        "totalInvested": 8268.75,
+        "totalReturned": 7185.00,
+        "profit": -1083.75
+      },
+      {
+        "ticker": "UBER",
+        "dateBought": "2023-05-15",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 42.60,
+        "totalInvested": 5112.00
+      },
+      {
+        "ticker": "SQ",
+        "dateBought": "2023-07-20",
+        "dateSold": null,
+        "sharesBought": 90,
+        "purchasePrice": 68.90,
+        "totalInvested": 6201.00
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Emily Wang",
+    "city": "Seattle",
+    "joinDate": "2023-01-30",
+    "totalPortfolioValue": 198450.80,
+    "totalGainLoss": 48450.80,
+    "transactions": [
+      {
+        "ticker": "AAPL",
+        "dateBought": "2022-12-15",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 142.50,
+        "totalInvested": 14250.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-02-10",
+        "dateSold": null,
+        "sharesBought": 75,
+        "purchasePrice": 320.80,
+        "totalInvested": 24060.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-04-18",
+        "dateSold": null,
+        "sharesBought": 85,
+        "purchasePrice": 108.75,
+        "totalInvested": 9243.75
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-06-25",
+        "dateSold": "2023-11-10",
+        "sharesBought": 55,
+        "purchasePrice": 195.30,
+        "sellPrice": 240.80,
+        "totalInvested": 10741.50,
+        "totalReturned": 13244.00,
+        "profit": 2502.50
+      },
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-08-14",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 425.60,
+        "totalInvested": 17024.00
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "David Thompson",
+    "city": "Denver",
+    "joinDate": "2023-04-12",
+    "totalPortfolioValue": 42180.90,
+    "totalGainLoss": 2180.90,
+    "transactions": [
+      {
+        "ticker": "SPY",
+        "dateBought": "2023-01-05",
+        "dateSold": null,
+        "sharesBought": 50,
+        "purchasePrice": 380.20,
+        "totalInvested": 19010.00
+      },
+      {
+        "ticker": "QQQ",
+        "dateBought": "2023-03-22",
+        "dateSold": null,
+        "sharesBought": 35,
+        "purchasePrice": 310.85,
+        "totalInvested": 10879.75
+      },
+      {
+        "ticker": "VTI",
+        "dateBought": "2023-05-30",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 220.40,
+        "totalInvested": 13224.00
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Jessica Martinez",
+    "city": "Miami",
+    "joinDate": "2023-03-25",
+    "totalPortfolioValue": 156780.45,
+    "totalGainLoss": 36780.45,
+    "transactions": [
+      {
+        "ticker": "BRK.B",
+        "dateBought": "2023-01-20",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 315.60,
+        "totalInvested": 25248.00
+      },
+      {
+        "ticker": "JPM",
+        "dateBought": "2023-02-28",
+        "dateSold": null,
+        "sharesBought": 65,
+        "purchasePrice": 142.35,
+        "totalInvested": 9252.75
+      },
+      {
+        "ticker": "JNJ",
+        "dateBought": "2023-04-10",
+        "dateSold": "2023-09-20",
+        "sharesBought": 70,
+        "purchasePrice": 165.80,
+        "sellPrice": 158.40,
+        "totalInvested": 11606.00,
+        "totalReturned": 11088.00,
+        "profit": -518.00
+      },
+      {
+        "ticker": "PG",
+        "dateBought": "2023-06-05",
+        "dateSold": null,
+        "sharesBought": 55,
+        "purchasePrice": 152.90,
+        "totalInvested": 8409.50
+      },
+      {
+        "ticker": "KO",
+        "dateBought": "2023-07-18",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 61.25,
+        "totalInvested": 7350.00
+      }
+    ]
+  }
+] 
