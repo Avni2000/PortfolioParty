@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 
-const Learn = () => {
+const Resources = () => {
  return (
     <Layout>
       <header className="pt-12 mb-12">
-        <h1 className="text-4xl font-extrabold text-center text-hero-text">Learn</h1>
+        <h1 className="text-4xl font-extrabold text-center text-hero-text">Resources</h1>
         <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto px-4">
           Subtitle here
         </p>
@@ -26,4 +26,4 @@ const Learn = () => {
   );
 };
 
-export default Learn;
+export default Resources;

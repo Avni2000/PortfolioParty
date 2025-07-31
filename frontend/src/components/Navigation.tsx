@@ -19,17 +19,17 @@ const Navigation = () => {
           <Button variant="nav" onClick={() => navigate('/what-we-offer')}>
             What We Offer
           </Button>
-          <Button variant="nav" onClick={() => navigate('/strategies')}>
-            Strategies
+          <Button variant="nav" onClick={() => navigate('/purpose')}>
+            Purpose
           </Button>
-          <Button variant="nav" onClick={() => navigate('/gold')}>
-            Gold
+          <Button variant="nav" onClick={() => navigate('/community')}>
+            Community
           </Button>
           <Button variant="nav" onClick={() => navigate('/legend')}>
             Legend
           </Button>
-          <Button variant="nav" onClick={() => navigate('/learn')}>
-            Learn
+          <Button variant="nav" onClick={() => navigate('/resources')}>
+            Resources
           </Button>
           <Button variant="nav" onClick={() => navigate('/support')}>
             Support
