@@ -3,20 +3,20 @@ import { Card, CardContent } from "@/components/ui/card";
 const FeatureGrid = () => {
   const features = [
     {
-      title: "Box Title 1",
-      description: "Feature description goes here"
+      title: "Popular Stocks Right Now",
+      description: "See what stocks are trending and popular among users. Get insights into the latest market movements and popular picks."
     },
     {
-      title: "Box Title 2", 
-      description: "Feature description goes here"
+      title: "Investor Chatrooms", 
+      description: "Join topic-based chatrooms to discuss strategies, share insights, and connect with other investors. Engage in real-time conversations about market trends and investment opportunities."
     },
     {
-      title: "Box Title 3",
-      description: "Feature description goes here"
+      title: "Portfolio Snapshots",
+      description: "Peak into anonymized, top-performing portfolios to see how successful investors are allocating their assets. Learn from the strategies of the best in the market."
     },
     {
-      title: "Box Title 4",
-      description: "Feature description goes here"
+      title: "Investment Insights Feed",
+      description: "Scroll through a personalized feed of investment insights, news, and updates. Stay informed with the latest market trends and expert analyses tailored to your interests."
     }
   ];
 
