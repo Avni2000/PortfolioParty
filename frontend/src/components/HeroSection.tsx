@@ -11,7 +11,7 @@ const HeroSection = () => {
           muted 
           loop
           playsInline
-        >
+        > { /* video link can go here! */}
           <source src="TODO" type="video/mp4" />
           {/* Fallback gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-background via-muted to-background"></div>
