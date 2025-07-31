@@ -444,7 +444,7 @@ const Dashboard = () => {
           </div>
 
           {/* Bottom Row - Asset Breakdown */}
-          <div className="grid grid-cols-1 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 w-full mx-auto">
             <div className="bg-white rounded-lg p-6 text-black">
               <h3 className="text-lg font-semibold mb-4">Asset Breakdown</h3>
               {portfolioData && portfolioData.assetBreakdown ? (
