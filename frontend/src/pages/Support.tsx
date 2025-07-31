@@ -6,21 +6,78 @@ const Support = () => {
       <header className="pt-12 mb-12">
         <h1 className="text-4xl font-extrabold text-center text-hero-text">Support</h1>
         <p className="mt-4 text-center text-lg text-muted-foreground max-w-3xl mx-auto px-4">
-          Subtitle here
+          We're here to help you navigate your journey. Whether you're new to Portfolio Party or a long-time user, explore the resources below or reach out directly.
         </p>
       </header>
 
-      <section className="max-w-5xl mx-auto space-y-16 px-4 pb-12">
+      <section className="max-w-5xl mx-auto space-y-16 px-4 pb-20">
+        {/* Section 1: FAQs */}
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-4">📚 Frequently Asked Questions</h2>
+          <p className="text-muted-foreground mb-4">
+            Get quick answers to common questions about accounts, billing, trading tools, and platform features.
+          </p>
+          <ul className="list-disc list-inside text-sm space-y-2 text-foreground">
+            <li>How do I reset my password?</li>
+            <li>Where can I view my transaction history?</li>
+            <li>What strategies do you recommend for beginners?</li>
+            <li>How do I update my profile information?</li>
+          </ul>
+        </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh nulla, sodales in semper vel, fermentum sit amet velit. Mauris tincidunt fermentum posuere. Nulla quis nisl blandit, euismod augue at, viverra magna. Sed fermentum, ligula eu tempus molestie, elit urna ultrices odio, ac placerat enim velit eu elit. Nam euismod varius dui eget tincidunt. Nunc id leo augue. Nullam quis erat ex. Fusce quis lectus dui. Nulla eu viverra mi. Nam elementum elit quis sapien tempus tempor. Sed tincidunt, nisi ac porttitor venenatis, metus lorem porta lectus, non malesuada elit lorem ac justo. Vivamus luctus nec mi a ullamcorper. In molestie, tortor maximus porttitor congue, libero tortor tempor sapien, ornare mattis urna felis sit amet risus. Nam imperdiet orci et urna gravida, sed tempor arcu egestas. Proin eleifend dui a imperdiet porttitor.
-        Nam pellentesque hendrerit nulla et porta. Donec vel est non odio pharetra blandit. Vivamus metus nisi, efficitur at eleifend et, rhoncus sed risus. Ut lacinia ornare tortor, at aliquet sem maximus eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut odio quam, pretium vel gravida vitae, dignissim vel libero. Sed interdum porta ante. Integer id magna dolor.
+        {/* Section 2: Contact Us */}
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-4">📬 Contact Us</h2>
+          <p className="text-muted-foreground mb-2">
+            Still need help? Our support team is ready to assist you Monday through Friday, 9am – 6pm EST.
+          </p>
+          <ul className="text-sm text-foreground space-y-1">
+            <li>Email: <a href="mailto:support@portfolioparty.com" className="underline hover:text-primary">support@portfolioparty.com</a></li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Live Chat: Available in the bottom right corner</li>
+          </ul>
+        </div>
 
-        Sed tempus arcu nibh, in sollicitudin neque malesuada at. Etiam congue nisl et sem vulputate dictum. Cras tempor orci suscipit tellus placerat consequat. Sed dignissim accumsan varius. Nam mauris diam, imperdiet dapibus odio eu, rutrum malesuada risus. Curabitur quis commodo lacus. Sed accumsan faucibus massa et ultrices. Nullam turpis turpis, porta at tincidunt ut, mattis eget urna. Donec fringilla nulla turpis, pellentesque elementum mauris commodo sit amet. Maecenas porttitor, lorem id pretium tempus, dui ipsum feugiat orci, sit amet tincidunt mauris risus ut est. Fusce neque turpis, faucibus in condimentum id, rutrum non augue. Sed sagittis nunc justo, et maximus tellus aliquam in.
+        {/* Section 3: Tutorials & Guides */}
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-4">🎥 Tutorials & Guides</h2>
+          <p className="text-muted-foreground mb-4">
+            Learn how to use our platform effectively with step-by-step tutorials.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="border border-border rounded-lg p-4 bg-muted">
+              <img
+                src="https://via.placeholder.com/400x200?text=Getting+Started"
+                alt="Getting Started Tutorial"
+                className="w-full rounded mb-2"
+              />
+              <h3 className="font-semibold text-lg">Getting Started</h3>
+              <p className="text-sm text-muted-foreground">Create an account, explore the dashboard, and set up your portfolio.</p>
+            </div>
 
-        Etiam vel nibh vitae justo rhoncus porttitor. In eu porta orci, vitae convallis nulla. Morbi nunc nulla, molestie vel urna ac, porta ultricies velit. Pellentesque venenatis nulla et magna feugiat, nec tincidunt justo dictum. Curabitur eu placerat orci. Mauris elementum augue pretium dolor aliquet interdum. Phasellus elit orci, cursus placerat blandit vel, hendrerit eu dolor. Nulla augue metus, lobortis a euismod eget, venenatis sed arcu. Nullam faucibus venenatis eros et pulvinar. Etiam fermentum dictum nisi, nec pretium purus aliquam vel. Sed laoreet odio sed hendrerit fermentum. Duis in sapien et metus pellentesque posuere.
+            <div className="border border-border rounded-lg p-4 bg-muted">
+              <img
+                src="https://via.placeholder.com/400x200?text=Trading+Tools"
+                alt="Trading Tools Tutorial"
+                className="w-full rounded mb-2"
+              />
+              <h3 className="font-semibold text-lg">Mastering Trading Tools</h3>
+              <p className="text-sm text-muted-foreground">Learn to analyze charts, use indicators, and manage your trades.</p>
+            </div>
+          </div>
+        </div>
 
-        Nulla facilisi. Morbi bibendum ut diam eget sodales. Quisque consectetur, velit vitae sollicitudin tristique, sem turpis malesuada tortor, eget rhoncus tellus lacus et sem. Praesent in ex vitae justo condimentum porta vel ut eros. Vivamus feugiat euismod nulla non feugiat. In venenatis porta risus at maximus. Ut eget orci convallis, pulvinar sapien in, semper lorem. Pellentesque risus dui, consectetur in scelerisque sit amet, convallis quis sapien. Suspendisse tincidunt mattis eros in luctus. Quisque quis quam sit amet massa scelerisque suscipit. Donec ultricies interdum augue, a varius velit venenatis sed. Etiam a consectetur dui.
-
+        {/* Section 4: Community */}
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-4">💬 Join the Community</h2>
+          <p className="text-muted-foreground mb-2">
+            Connect with other investors, ask questions, and share strategies on our forum and Discord.
+          </p>
+          <ul className="text-sm text-foreground space-y-1">
+            <li>Forum: <a href="https://google.com" className="underline hover:text-primary">community.portfolioparty.com</a></li>
+            <li>Discord: <a href="https://discord.gg/" className="underline hover:text-primary">Join our Discord</a></li>
+          </ul>
+        </div>
       </section>
     </Layout>
   );
