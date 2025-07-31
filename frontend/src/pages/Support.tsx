@@ -66,6 +66,8 @@ const Support = () => {
           <ul className="text-sm text-foreground space-y-1">
             <li>Forum: <a href="https://google.com" className="underline hover:text-primary">community.portfolioparty.com</a></li>
             <li>Discord: <a href="https://discord.gg/" className="underline hover:text-primary">Join our Discord</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com" className="underline hover:text-primary">Connect with Us</a></li>
+            <li>X: <a href="https://x.com" className="underline hover:text-primary">Follow our Page</a></li>
           </ul>
         </div>
       </section>
