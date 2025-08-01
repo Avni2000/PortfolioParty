@@ -116,7 +116,7 @@ export function ChatWidget() {
     },
     {
       id: "7",
-      sender: "helena",
+      sender: "user",
       content: "Look on the pages on their website that explain its purpose and what they offer!",
       timestamp: new Date(Date.now() - 1000 * 60 * 5),
       type: "received" as const,
