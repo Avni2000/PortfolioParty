@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import Chat from "@/img/chatScreenshot.png";
-import { Twitter, Discord, Linkedin } from "lucide-react";
 
 const Community = () => {
   return (
