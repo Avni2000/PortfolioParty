@@ -206,7 +206,7 @@ export function ChatWidget() {
         <Card className="fixed bottom-6 right-6 w-[900px] h-[550px] shadow-2xl z-50 bg-white border border-gray-200 rounded-lg overflow-hidden">
           {/* Header with close buttons */}
           <div className="flex items-center justify-between p-3 border-b border-gray-200 bg-gray-50">
-            <h1 className="text-lg font-semibold">Messages</h1>
+            <h1 className="text-lg font-semibold text-black">Messages</h1>
             <div className="flex items-center space-x-1">
               <Button
                 variant="ghost"

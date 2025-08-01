@@ -9,11 +9,10 @@ import NotFound from "./pages/NotFound";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login"; 
 import Dashboard from "./pages/Dashboard";
+import CommunityOutlook from "./pages/CommunityOutlook";
 import WhatWeOffer from "./pages/WhatWeOffer";
 import Purpose from "./pages/Purpose";
 import Community from "./pages/Community";
-import Legend from "./pages/Legend";
-import Resources from "./pages/Resources";
 import Support from "./pages/Support";
 
 const queryClient = new QueryClient();
@@ -32,6 +31,20 @@ const ProtectedDashboard = () => {
   return <Dashboard />;
 };
 
+const ProtectedCommunityOutlook = () => {
+  const { isSignedIn, currentUser } = useAuth();
+  
+  console.log('🛡️ ProtectedCommunityOutlook render - isSignedIn:', isSignedIn, 'user:', currentUser?.email);
+  
+  // Redirect to login if not signed in
+  if (!isSignedIn) {
+    console.log('❌ User not signed in, redirecting to login');
+    return <Navigate to="/login" replace />;
+  }
+  
+  return <CommunityOutlook />;
+};
+
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -48,6 +61,7 @@ const App = () => (
             <Route path="/what-we-offer" element={<WhatWeOffer />} />
             <Route path="/purpose" element={<Purpose />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/community-outlook" element={<ProtectedCommunityOutlook />} />
             <Route path="/support" element={<Support />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

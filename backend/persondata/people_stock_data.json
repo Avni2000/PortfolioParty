@@ -323,5 +323,603 @@
         "totalInvested": 7155.00
       }
     ]
+  },
+  {
+    "id": 10,
+    "name": "Marcus Chen",
+    "city": "San Francisco",
+    "joinDate": "2023-01-10",
+    "totalPortfolioValue": 245780.25,
+    "totalGainLoss": 95780.25,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-01-15",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 210.50,
+        "totalInvested": 16840.00
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-02-20",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 195.30,
+        "totalInvested": 23436.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-03-10",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 85.20,
+        "totalInvested": 17040.00
+      },
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-04-05",
+        "dateSold": null,
+        "sharesBought": 150,
+        "purchasePrice": 165.80,
+        "totalInvested": 24870.00
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Sofia Rodriguez",
+    "city": "San Francisco", 
+    "joinDate": "2023-02-14",
+    "totalPortfolioValue": 32450.80,
+    "totalGainLoss": -17549.20,
+    "transactions": [
+      {
+        "ticker": "NOVO",
+        "dateBought": "2023-03-01",
+        "dateSold": null,
+        "sharesBought": 150,
+        "purchasePrice": 120.40,
+        "totalInvested": 18060.00
+      },
+      {
+        "ticker": "UNH",
+        "dateBought": "2023-04-15",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 485.20,
+        "totalInvested": 19408.00
+      },
+      {
+        "ticker": "PYPL",
+        "dateBought": "2023-05-20",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 78.50,
+        "totalInvested": 6280.00
+      },
+      {
+        "ticker": "INTC",
+        "dateBought": "2023-06-10",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 31.25,
+        "totalInvested": 6250.00
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "James Kim",
+    "city": "San Francisco",
+    "joinDate": "2023-01-05",
+    "totalPortfolioValue": 387920.65,
+    "totalGainLoss": 187920.65,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-01-05",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 195.80,
+        "totalInvested": 39160.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-02-01",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 320.40,
+        "totalInvested": 32040.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-03-15",
+        "dateSold": null,
+        "sharesBought": 180,
+        "purchasePrice": 105.80,
+        "totalInvested": 19044.00
+      },
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-04-20",
+        "dateSold": null,
+        "sharesBought": 250,
+        "purchasePrice": 165.20,
+        "totalInvested": 41300.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-05-10",
+        "dateSold": null,
+        "sharesBought": 300,
+        "purchasePrice": 92.40,
+        "totalInvested": 27720.00
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-06-01",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 207.36,
+        "totalInvested": 20736.00
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Amanda Foster",
+    "city": "San Francisco",
+    "joinDate": "2023-03-20",
+    "totalPortfolioValue": 45230.40,
+    "totalGainLoss": -24769.60,
+    "transactions": [
+      {
+        "ticker": "NFLX",
+        "dateBought": "2023-04-01",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 425.80,
+        "totalInvested": 25548.00
+      },
+      {
+        "ticker": "PYPL",
+        "dateBought": "2023-05-15",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 85.60,
+        "totalInvested": 10272.00
+      },
+      {
+        "ticker": "SNAP",
+        "dateBought": "2023-06-20",
+        "dateSold": null,
+        "sharesBought": 400,
+        "purchasePrice": 12.40,
+        "totalInvested": 4960.00
+      },
+      {
+        "ticker": "UBER",
+        "dateBought": "2023-07-10",
+        "dateSold": null,
+        "sharesBought": 180,
+        "purchasePrice": 45.80,
+        "totalInvested": 8244.00
+      },
+      {
+        "ticker": "ROKU",
+        "dateBought": "2023-08-05",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 68.90,
+        "totalInvested": 5512.00
+      },
+      {
+        "ticker": "ZOOM",
+        "dateBought": "2023-09-01",
+        "dateSold": null,
+        "sharesBought": 150,
+        "purchasePrice": 89.50,
+        "totalInvested": 13425.00
+      },
+      {
+        "ticker": "PELOTON",
+        "dateBought": "2023-10-15",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 11.20,
+        "totalInvested": 2240.00
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Robert Zhang",
+    "city": "San Francisco",
+    "joinDate": "2023-02-28",
+    "totalPortfolioValue": 128650.90,
+    "totalGainLoss": 38650.90,
+    "transactions": [
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-03-10",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 155.40,
+        "totalInvested": 18648.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-04-20",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 318.60,
+        "totalInvested": 25488.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-05-15",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 108.20,
+        "totalInvested": 10820.00
+      },
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-06-01",
+        "dateSold": null,
+        "sharesBought": 50,
+        "purchasePrice": 380.40,
+        "totalInvested": 19020.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-07-10",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 115.20,
+        "totalInvested": 13824.00
+      },
+      {
+        "ticker": "AMZN",
+        "dateBought": "2023-08-15",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 135.80,
+        "totalInvested": 8148.00
+      },
+      {
+        "ticker": "META",
+        "dateBought": "2023-09-05",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 295.50,
+        "totalInvested": 11820.00
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Lisa Park",
+    "city": "San Francisco",
+    "joinDate": "2023-04-10",
+    "totalPortfolioValue": 28340.15,
+    "totalGainLoss": -31659.85,
+    "transactions": [
+      {
+        "ticker": "NOVO",
+        "dateBought": "2023-05-01",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 118.60,
+        "totalInvested": 23720.00
+      },
+      {
+        "ticker": "UNH",
+        "dateBought": "2023-06-15",
+        "dateSold": null,
+        "sharesBought": 30,
+        "purchasePrice": 498.40,
+        "totalInvested": 14952.00
+      },
+      {
+        "ticker": "CVS",
+        "dateBought": "2023-07-20",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 74.20,
+        "totalInvested": 8904.00
+      },
+      {
+        "ticker": "WBA",
+        "dateBought": "2023-08-10",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 25.80,
+        "totalInvested": 5160.00
+      },
+      {
+        "ticker": "INTC",
+        "dateBought": "2023-09-05",
+        "dateSold": null,
+        "sharesBought": 250,
+        "purchasePrice": 34.50,
+        "totalInvested": 8625.00
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Daniel Wright",
+    "city": "San Francisco",
+    "joinDate": "2023-01-25",
+    "totalPortfolioValue": 156780.30,
+    "totalGainLoss": 66780.30,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-02-10",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 220.80,
+        "totalInvested": 13248.00
+      },
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-03-15",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 162.40,
+        "totalInvested": 16240.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-04-20",
+        "dateSold": null,
+        "sharesBought": 70,
+        "purchasePrice": 325.60,
+        "totalInvested": 22792.00
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-05-10",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 185.40,
+        "totalInvested": 14832.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-06-05",
+        "dateSold": null,
+        "sharesBought": 90,
+        "purchasePrice": 112.80,
+        "totalInvested": 10152.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-07-15",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 118.40,
+        "totalInvested": 11840.00
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Michelle Lee",
+    "city": "San Francisco",
+    "joinDate": "2023-05-15",
+    "totalPortfolioValue": 38920.45,
+    "totalGainLoss": -21079.55,
+    "transactions": [
+      {
+        "ticker": "BABA",
+        "dateBought": "2023-06-01",
+        "dateSold": null,
+        "sharesBought": 150,
+        "purchasePrice": 95.80,
+        "totalInvested": 14370.00
+      },
+      {
+        "ticker": "PYPL",
+        "dateBought": "2023-07-10",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 82.40,
+        "totalInvested": 8240.00
+      },
+      {
+        "ticker": "NFLX",
+        "dateBought": "2023-08-15",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 435.20,
+        "totalInvested": 17408.00
+      },
+      {
+        "ticker": "SPOT",
+        "dateBought": "2023-09-20",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 145.60,
+        "totalInvested": 11648.00
+      },
+      {
+        "ticker": "ZM",
+        "dateBought": "2023-10-05",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 72.80,
+        "totalInvested": 8736.00
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Kevin Johnson",
+    "city": "San Francisco",
+    "joinDate": "2023-03-05",
+    "totalPortfolioValue": 285640.85,
+    "totalGainLoss": 135640.85,
+    "transactions": [
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-01-20",
+        "dateSold": null,
+        "sharesBought": 150,
+        "purchasePrice": 195.40,
+        "totalInvested": 29310.00
+      },
+      {
+        "ticker": "TSLA",
+        "dateBought": "2023-02-15",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 210.80,
+        "totalInvested": 25296.00
+      },
+      {
+        "ticker": "AMD",
+        "dateBought": "2023-03-20",
+        "dateSold": null,
+        "sharesBought": 200,
+        "purchasePrice": 88.60,
+        "totalInvested": 17720.00
+      },
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-04-10",
+        "dateSold": null,
+        "sharesBought": 180,
+        "purchasePrice": 168.40,
+        "totalInvested": 30312.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-05-25",
+        "dateSold": null,
+        "sharesBought": 90,
+        "purchasePrice": 335.80,
+        "totalInvested": 30222.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-06-15",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 115.60,
+        "totalInvested": 13872.00
+      },
+      {
+        "ticker": "META",
+        "dateBought": "2023-07-20",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 305.40,
+        "totalInvested": 18324.00
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Rachel Davis",
+    "city": "San Francisco",
+    "joinDate": "2023-06-20",
+    "totalPortfolioValue": 67420.20,
+    "totalGainLoss": 17420.20,
+    "transactions": [
+      {
+        "ticker": "AAPL",
+        "dateBought": "2023-07-05",
+        "dateSold": null,
+        "sharesBought": 80,
+        "purchasePrice": 192.40,
+        "totalInvested": 15392.00
+      },
+      {
+        "ticker": "MSFT",
+        "dateBought": "2023-08-10",
+        "dateSold": null,
+        "sharesBought": 50,
+        "purchasePrice": 340.60,
+        "totalInvested": 17030.00
+      },
+      {
+        "ticker": "GOOGL",
+        "dateBought": "2023-09-15",
+        "dateSold": null,
+        "sharesBought": 70,
+        "purchasePrice": 125.80,
+        "totalInvested": 8806.00
+      },
+      {
+        "ticker": "AMZN",
+        "dateBought": "2023-10-20",
+        "dateSold": null,
+        "sharesBought": 40,
+        "purchasePrice": 145.60,
+        "totalInvested": 5824.00
+      },
+      {
+        "ticker": "NVDA",
+        "dateBought": "2023-11-05",
+        "dateSold": null,
+        "sharesBought": 20,
+        "purchasePrice": 480.20,
+        "totalInvested": 9604.00
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Steven Wilson",
+    "city": "San Francisco",
+    "joinDate": "2023-07-30",
+    "totalPortfolioValue": 25180.65,
+    "totalGainLoss": -24819.35,
+    "transactions": [
+      {
+        "ticker": "NOVO",
+        "dateBought": "2023-08-15",
+        "dateSold": null,
+        "sharesBought": 120,
+        "purchasePrice": 125.40,
+        "totalInvested": 15048.00
+      },
+      {
+        "ticker": "UNH",
+        "dateBought": "2023-09-20",
+        "dateSold": null,
+        "sharesBought": 25,
+        "purchasePrice": 520.80,
+        "totalInvested": 13020.00
+      },
+      {
+        "ticker": "CVS",
+        "dateBought": "2023-10-10",
+        "dateSold": null,
+        "sharesBought": 100,
+        "purchasePrice": 76.40,
+        "totalInvested": 7640.00
+      },
+      {
+        "ticker": "INTC",
+        "dateBought": "2023-11-15",
+        "dateSold": null,
+        "sharesBought": 180,
+        "purchasePrice": 38.20,
+        "totalInvested": 6876.00
+      },
+      {
+        "ticker": "IBM",
+        "dateBought": "2023-12-05",
+        "dateSold": null,
+        "sharesBought": 60,
+        "purchasePrice": 142.80,
+        "totalInvested": 8568.00
+      }
+    ]
   }
 ] 

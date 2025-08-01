@@ -57,8 +57,8 @@ export function ChatArea({ messages, onSendMessage }: ChatAreaProps) {
             className="w-10 h-10 rounded-full mr-3"
           />
           <div>
-            <h2 className="font-semibold">Helena Hills</h2>
-            <p className="text-sm text-gray-500">Active 10m ago</p>
+            <h2 className="font-semibold text-black">Helena Hills</h2>
+            <p className="text-sm text-gray-500">Active 20m ago</p>
           </div>
         </div>
         <div className="flex items-center space-x-2">

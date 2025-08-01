@@ -12,7 +12,7 @@ export function ProfileSidebar() {
           alt="Helena Hills"
           className="w-20 h-20 rounded-full mx-auto mb-4"
         />
-        <h3 className="font-semibold text-lg">Helena</h3>
+        <h3 className="font-semibold text-lg text-black">Helena</h3>
         <p className="text-sm text-gray-500 mb-4">Active 20m ago</p>
 
         <Button className="w-full mb-6 bg-black text-white hover:bg-gray-800">View profile</Button>

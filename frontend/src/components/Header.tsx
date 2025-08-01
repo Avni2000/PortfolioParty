@@ -20,6 +20,12 @@ const Header = () => {
           <Link to="/dashboard" className="text-xl font-bold text-black">
             Dashboard
           </Link>
+           <Link 
+            to="/community-outlook" 
+            className="text-xl font-bold text-black hover:underline"
+          >
+            Community Outlook
+          </Link>
         </div>
 
         {/* Profile Dropdown */}
